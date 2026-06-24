@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Power of Preparation and Timing | Stories of Success | Alee Douglass</title>
+  <meta name="description" content="Stories of Success by Alee Douglass: how preparation, timing, and negotiation helped secure an exceptional luxury condo sale at Altura Bayshore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#012A5B;
+      --navy-2:#001F45;
+      --ink:#0C1220;
+      --muted:#5B6475;
+      --paper:#F7F9FC;
+      --line:rgba(1,42,91,.18);
+      --gold:#C8B76A;
+      --shadow:0 16px 40px rgba(0,0,0,.12);
+      --radius:18px;
+      --max:980px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.55;
+    }
+
+    a{
+      color:var(--navy);
+      text-decoration-thickness:2px;
+      text-underline-offset:3px;
+    }
+
+    a:hover{opacity:.9}
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 18px;
+    }
+
+    .topbar{
+      background:linear-gradient(180deg, var(--navy), var(--navy-2));
+      color:#fff;
+      padding:16px 0;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      position:sticky;
+      top:0;
+      z-index:10;
+      backdrop-filter:saturate(1.2) blur(6px);
+    }
+
+    .topbar .row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      letter-spacing:.2px;
+    }
+
+    .brand .kicker{
+      font-size:12px;
+      text-transform:uppercase;
+      opacity:.85;
+      letter-spacing:.16em;
+    }
+
+    .brand .name{
+      font-family:"Playfair Display", Georgia, serif;
+      font-size:20px;
+      font-weight:600;
+      margin-top:2px;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      font-size:13px;
+    }
+
+    .nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .nav-dropdown{
+      position:relative;
+      display:inline-block;
+    }
+
+    .nav-dropdown-menu{
+      display:none;
+      position:absolute;
+      right:0;
+      top:100%;
+      min-width:280px;
+      background:#fff;
+      border:1px solid rgba(1,42,91,.14);
+      border-radius:14px;
+      box-shadow:0 14px 32px rgba(0,0,0,.14);
+      padding:8px;
+      z-index:20;
+    }
+
+    .nav-dropdown-menu a{
+      display:block;
+      padding:10px 12px;
+      border-radius:10px;
+      color:var(--navy);
+      text-decoration:none;
+      font-size:14px;
+      line-height:1.3;
+    }
+
+    .nav-dropdown-menu a:hover{
+      background:rgba(1,42,91,.06);
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu{
+      display:block;
+    }
+
+    .hero{
+      margin:18px auto 0;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:#fff;
+      border:1px solid rgba(1,42,91,.12);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 1.25fr;
+      min-height:360px;
+    }
+
+    .hero-left{
+      background:linear-gradient(180deg, var(--navy), var(--navy-2));
+      color:#fff;
+      padding:34px 28px;
+      position:relative;
+    }
+
+    .hero-left:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(900px 420px at 10% 10%, rgba(200,183,106,.22), transparent 60%);
+      pointer-events:none;
+    }
+
+    .hero-tag{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      opacity:.9;
+      position:relative;
+      z-index:1;
+    }
+
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:var(--gold);
+      display:inline-block;
+    }
+
+    h1{
+      font-family:"Playfair Display", Georgia, serif;
+      font-weight:600;
+      font-size:40px;
+      line-height:1.05;
+      margin:14px 0 12px;
+      position:relative;
+      z-index:1;
+    }
+
+    .sub{
+      font-size:15.5px;
+      opacity:.92;
+      max-width:38ch;
+      position:relative;
+      z-index:1;
+    }
+
+    .hero-cta{
+      margin-top:18px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+      position:relative;
+      z-index:1;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:999px;
+      font-weight:600;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      text-decoration:none;
+    }
+
+    .btn:hover{background:rgba(255,255,255,.16)}
+
+    .btn.secondary{
+      border-color:rgba(200,183,106,.55);
+      color:#fff;
+    }
+
+    .hero-right{
+      background:#0b1220;
+      position:relative;
+    }
+
+    .hero-right img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      filter:saturate(1.02) contrast(1.02);
+    }
+
+    .img-credit{
+      position:absolute;
+      right:10px;
+      bottom:10px;
+      font-size:11px;
+      color:rgba(255,255,255,.85);
+      background:rgba(0,0,0,.35);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+
+    main{padding:22px 0 44px}
+
+    .card{
+      background:#fff;
+      border:1px solid rgba(1,42,91,.12);
+      border-radius:var(--radius);
+      box-shadow:0 10px 28px rgba(0,0,0,.06);
+    }
+
+    .article{padding:28px}
+
+    .meta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-bottom:10px;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid rgba(1,42,91,.18);
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(1,42,91,.04);
+    }
+
+    h2{
+      font-family:"Playfair Display", Georgia, serif;
+      font-size:26px;
+      margin:18px 0 10px;
+    }
+
+    p{margin:10px 0}
+
+    .lead{
+      font-size:17px;
+      color:#1a2233;
+    }
+
+    .rule{
+      height:1px;
+      background:var(--line);
+      margin:18px 0;
+    }
+
+    footer{
+      margin-top:18px;
+      padding:18px 24px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      border-top:1px solid rgba(1,42,91,.12);
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .fineprint{
+      opacity:.85;
+      max-width:70ch;
+    }
+
+    @media (max-width:860px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-right{min-height:260px}
+      h1{font-size:34px}
+      .nav{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="row">
+        <div class="brand">
+          <div class="kicker">Stories of Success</div>
+          <div class="name">by Alee Douglass</div>
+        </div>
+
+        <nav class="nav" aria-label="Stories navigation">
+          <a href="../">Home</a>
+          <div class="nav-dropdown">
+            <a href="../">Stories of Success ▾</a>
+            <div class="nav-dropdown-menu">
+              <a href="../november-2025/">November 2025: A Sweet Start to Homeownership</a>
+              <a href="../june-2026/">June 2026: The Power of Preparation and Timing</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="wrap">
+    <div class="hero" role="banner">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-tag"><span class="dot"></span> Seller Story</div>
+          <h1>The Power of Preparation and Timing</h1>
+          <p class="sub">How strategic positioning, early exposure, and skilled negotiation led to an exceptional luxury condo sale.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#story">Read the full story</a>
+            <a class="btn secondary" href="#outcome">See the outcome</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <img src="assets/success-story-photo.jpg" alt="Luxury condominium residence at Altura Bayshore." />
+          <div class="img-credit">Altura Bayshore</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap" id="story">
+    <div class="card">
+      <article class="article">
+        <div class="meta">
+          <span class="pill"><span class="dot"></span> Tampa Bay • Luxury condo market</span>
+          <span class="pill">Planned list price: $2,275,000</span>
+          <span class="pill">Sold: $2,435,000</span>
+        </div>
+
+        <p class="lead">
+          When my clients decided it was time to sell their residence at Altura Bayshore, we knew we were entering a challenging luxury condo market. Similar residences in the building had been averaging nearly 240 days on the market, and we were preparing to launch at $2,275,000 based on current market conditions.
+        </p>
+
+        <p>
+          Like most sellers, their goal was simple: achieve the best possible price with the least amount of stress and uncertainty.
+        </p>
+
+        <h2>The strategy</h2>
+
+        <p>
+          Before launching on the MLS, I focused on making sure the residence was positioned for success from day one.
+        </p>
+
+        <p>
+          We carefully and thoughtfully prepared the home for sale, developed a pricing and marketing strategy, and hosted a pre-market broker’s open to generate early interest among agents who specialize in luxury properties.
+        </p>
+
+        <p>
+          The day before we were scheduled to go live, an agent attended the broker’s open with clients who had been specifically looking for a residence in Altura. They immediately recognized the opportunity.
+        </p>
+
+        <p>
+          What happened next came down to preparation, market knowledge, and negotiation.
+        </p>
+
+        <div class="rule"></div>
+
+        <p>
+          The buyers understood what made this residence special. My sellers and I also understood something important: they were not simply interested in the property; they wanted this property. As an experienced business owner and negotiator himself, my seller recognized the same opportunity I did.
+        </p>
+
+        <p>
+          We had intentionally priced the home based on current market conditions, but the level of interest we were seeing before launch reinforced our belief that this residence would stand out. With the property scheduled to hit the MLS the following day, the buyers faced the possibility of increased competition and multiple offers.
+        </p>
+
+        <p>
+          Rather than rushing to accept the first offer, we strategically created urgency around the opportunity in front of them. By understanding the buyers’ motivation, the uniqueness of the residence, and the leverage created by our upcoming market launch, we were able to negotiate a sale price that exceeded our planned list price by $160,000.
+        </p>
+
+        <h2 id="outcome">The outcome</h2>
+
+        <p>
+          The property went under contract before ever hitting the MLS.
+        </p>
+
+        <p>
+          The final sale price was <strong>$2,435,000</strong>, which was $160,000 higher than our planned list price and the highest-priced non-penthouse sale in Altura Bayshore within the previous 12 months.
+        </p>
+
+        <p>
+          Even more importantly, my clients avoided months of showings, uncertainty, and market time while achieving an exceptional result.
+        </p>
+
+        <h2>Why it matters</h2>
+
+        <p>
+          People often think real estate success comes from putting a sign in the yard and getting a property online.
+        </p>
+
+        <p>
+          In reality, the best outcomes are often created long before a listing goes live.
+        </p>
+
+        <p>
+          Preparation, strategic positioning, professional relationships, and skilled negotiation can make a significant difference in both price and experience. This sale is a great example of how the right buyer, combined with the right strategy, can create an opportunity that benefits everyone involved.
+        </p>
+
+        <div class="rule"></div>
+
+        <h2>Closing message</h2>
+
+        <p>
+          Every home and every seller’s situation is unique. My goal is always to help clients maximize their opportunities through thoughtful preparation, market expertise, and strong negotiation.
+        </p>
+
+        <p>
+          If you’re considering a move and would like to discuss what that could look like for your home, I’d be happy to help.
+        </p>
+      </article>
+
+      <footer>
+        <div>
+          <strong>Alee Douglass</strong> • Broker Associate
+        </div>
+        <div class="fineprint">
+          Sotheby’s International Realty® and the Sotheby’s International Realty logo are registered service marks used with permission. Each office is independently owned and operated. Equal Housing Opportunity. If your property is listed with a real estate broker, please disregard. It is not our intention to solicit the offerings of other real estate brokers.
+        </div>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
