@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stories of Success | Alee Douglass</title>
+  <meta name="description" content="Stories of Success by Alee Douglass, featuring real client wins and thoughtful real estate strategy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#012A5B;
+      --navy-2:#001F45;
+      --ink:#0C1220;
+      --muted:#5B6475;
+      --paper:#F7F9FC;
+      --line:rgba(1,42,91,.18);
+      --gold:#C8B76A;
+      --shadow:0 16px 40px rgba(0,0,0,.12);
+      --radius:18px;
+      --max:980px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.55;
+    }
+
+    a{
+      color:var(--navy);
+      text-decoration-thickness:2px;
+      text-underline-offset:3px;
+    }
+
+    a:hover{opacity:.9}
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 18px;
+    }
+
+    .topbar{
+      background:linear-gradient(180deg, var(--navy), var(--navy-2));
+      color:#fff;
+      padding:16px 0;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      position:sticky;
+      top:0;
+      z-index:10;
+      backdrop-filter:saturate(1.2) blur(6px);
+    }
+
+    .topbar .row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .brand{
+      display:flex;
+      flex-direction:column;
+      letter-spacing:.2px;
+    }
+
+    .brand .kicker{
+      font-size:12px;
+      text-transform:uppercase;
+      opacity:.85;
+      letter-spacing:.16em;
+    }
+
+    .brand .name{
+      font-family:"Playfair Display", Georgia, serif;
+      font-size:20px;
+      font-weight:600;
+      margin-top:2px;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      font-size:13px;
+    }
+
+    .nav a{
+      color:#fff;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .nav-dropdown{
+      position:relative;
+      display:inline-block;
+    }
+
+    .nav-dropdown-trigger{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      cursor:pointer;
+    }
+
+    .nav-dropdown-menu{
+      display:none;
+      position:absolute;
+      right:0;
+      top:100%;
+      min-width:280px;
+      background:#fff;
+      border:1px solid rgba(1,42,91,.14);
+      border-radius:14px;
+      box-shadow:0 14px 32px rgba(0,0,0,.14);
+      padding:8px;
+      z-index:20;
+    }
+
+    .nav-dropdown-menu a{
+      display:block;
+      padding:10px 12px;
+      border-radius:10px;
+      color:var(--navy);
+      text-decoration:none;
+      font-size:14px;
+      line-height:1.3;
+    }
+
+    .nav-dropdown-menu a:hover{
+      background:rgba(1,42,91,.06);
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu{
+      display:block;
+    }
+
+    .hero{
+      margin:18px auto 0;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      background:linear-gradient(180deg, var(--navy), var(--navy-2));
+      color:#fff;
+      border:1px solid rgba(1,42,91,.12);
+      padding:42px 30px;
+      position:relative;
+    }
+
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(900px 420px at 10% 10%, rgba(200,183,106,.22), transparent 60%);
+      pointer-events:none;
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:1;
+      max-width:720px;
+    }
+
+    .hero-tag{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      opacity:.9;
+    }
+
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:var(--gold);
+      display:inline-block;
+    }
+
+    h1{
+      font-family:"Playfair Display", Georgia, serif;
+      font-weight:600;
+      font-size:42px;
+      line-height:1.05;
+      margin:14px 0 12px;
+    }
+
+    .sub{
+      font-size:16px;
+      opacity:.92;
+      max-width:58ch;
+    }
+
+    main{
+      padding:22px 0 44px;
+    }
+
+    .story-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:18px;
+    }
+
+    .story-card{
+      background:#fff;
+      border:1px solid rgba(1,42,91,.12);
+      border-radius:var(--radius);
+      box-shadow:0 10px 28px rgba(0,0,0,.06);
+      overflow:hidden;
+    }
+
+    .story-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+      background:#0b1220;
+    }
+
+    .story-card-content{
+      padding:22px;
+    }
+
+    .meta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-bottom:10px;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid rgba(1,42,91,.18);
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(1,42,91,.04);
+    }
+
+    h2{
+      font-family:"Playfair Display", Georgia, serif;
+      font-size:26px;
+      margin:10px 0;
+    }
+
+    p{margin:10px 0}
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      margin-top:8px;
+      padding:11px 14px;
+      border-radius:999px;
+      font-weight:600;
+      border:1px solid rgba(1,42,91,.18);
+      background:rgba(1,42,91,.04);
+      color:var(--navy);
+      text-decoration:none;
+    }
+
+    footer{
+      margin-top:18px;
+      padding:18px 24px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      border-top:1px solid rgba(1,42,91,.12);
+      color:var(--muted);
+      font-size:13px;
+      background:#fff;
+    }
+
+    .fineprint{
+      opacity:.85;
+      max-width:70ch;
+    }
+
+    @media (max-width:860px){
+      .story-grid{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .nav{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="row">
+        <div class="brand">
+          <div class="kicker">Stories of Success</div>
+          <div class="name">by Alee Douglass</div>
+        </div>
+
+        <nav class="nav" aria-label="Stories navigation">
+          <a href="./">Home</a>
+          <div class="nav-dropdown">
+            <a class="nav-dropdown-trigger" href="./">Stories of Success ▾</a>
+            <div class="nav-dropdown-menu">
+              <a href="november-2025/">November 2025: A Sweet Start to Homeownership</a>
+              <a href="june-2026/">June 2026: The Power of Preparation and Timing</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="wrap">
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot"></span> Client Wins</div>
+        <h1>Stories of Success</h1>
+        <p class="sub">
+          Real client stories showing how preparation, strategy, negotiation, and market expertise can shape better real estate outcomes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <div class="story-grid">
+      <article class="story-card">
+        <img src="november-2025/assets/success-story-photo.jpg" alt="Home photo with buyers standing in front." />
+        <div class="story-card-content">
+          <div class="meta">
+            <span class="pill"><span class="dot"></span> November 2025</span>
+            <span class="pill">Buyer Story</span>
+          </div>
+          <h2>A Sweet Start to Homeownership</h2>
+          <p>
+            A smart negotiation turned major inspection concerns into brand-new systems and day-one equity for the buyers.
+          </p>
+          <a class="btn" href="november-2025/">Read the story</a>
+        </div>
+      </article>
+
+      <article class="story-card">
+        <img src="june-2026/assets/success-story-photo.jpg" alt="Luxury condominium residence at Altura Bayshore." />
+        <div class="story-card-content">
+          <div class="meta">
+            <span class="pill"><span class="dot"></span> June 2026</span>
+            <span class="pill">Seller Story</span>
+          </div>
+          <h2>The Power of Preparation and Timing</h2>
+          <p>
+            Strategic positioning, early exposure, and skilled negotiation helped secure a sale before the residence ever hit the MLS.
+          </p>
+          <a class="btn" href="june-2026/">Read the story</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Alee Douglass</strong> • Broker Associate
+    </div>
+    <div class="fineprint">
+      Sotheby’s International Realty® and the Sotheby’s International Realty logo are registered service marks used with permission. Each office is independently owned and operated. Equal Housing Opportunity. If your property is listed with a real estate broker, please disregard. It is not our intention to solicit the offerings of other real estate brokers.
+    </div>
+  </footer>
+</body>
+</html>
